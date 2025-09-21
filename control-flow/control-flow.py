@@ -20,9 +20,7 @@ match priority:
 
 # Add time sensitivity check
 if time_bound == "yes":
-    reminder += " that requires immediate attention today!"
+    print(f"Reminder: '{reminder}' that requires immediate attention today!")
 else:
-    reminder += ". Consider completing it when you have free time."
+    print(f"Note: '{reminder}'. Consider completing it when you have free time.")
 
-# Final output
-print("\nReminder:", reminder)
